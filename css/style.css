@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+
+/* header */
+.intestazione{
+    padding: 40px;
+}
+.title{
+    color: #e53170;
+    text-align: center;
+    font-size: 5vh;
+}
+
+
+
+/* main */
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 2vh;
+    text-align: center;
+}
+.text{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+.debug{
+    height: 250px;
+    width: 1500px;
+    background-color: #e53170;
+}
