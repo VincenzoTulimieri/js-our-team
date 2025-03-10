@@ -42,13 +42,17 @@ const teamMembers = [
 const rowElement = document.querySelector('.row');
 console.log(rowElement);
 
-htmlElement(rowElement, teamMembers);
-console.log(htmlElement(rowElement,teamMembers))
+// inserimento in pagina del html
+htmlElements(rowElement, teamMembers);
+
+
+
 
 // funzioni
 
-function htmlElement(colElement, team) {
+function htmlElements(colElement, team) {
 
+  // inserimento in pagina del html
   let items = '';
 
   for (let i = 0; i < team.length; i++) {
@@ -57,6 +61,25 @@ function htmlElement(colElement, team) {
   }
   colElement.innerHTML = items
 
+}
+
+function createHtmlElement(data){
+  //creazione del html
+  const element = `<div class="col">
+            <div class="container-card">
+              <div class="row-card">
+                <div class="col-img">
+                  <img src="${data.img}" alt="foto di ${data.name}">
+                </div>
+                <div class="col-card">
+                  <h5 class="name">${data.name}</h5>
+                  <p class="text-role">${data.role}</p>
+                  <p class="text-mail">${data.email}</p>
+                </div>
+              </div>
+            </div>
+          </div>`
+  return element
 }
 
 
