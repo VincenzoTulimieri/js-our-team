@@ -37,4 +37,26 @@ const teamMembers = [
   }
 ];
 
+// dichiarazioni delle variabili e cattura degli elementi html
+
+const rowElement = document.querySelector('.row');
+console.log(rowElement);
+
+htmlElement(rowElement, teamMembers);
+console.log(htmlElement(rowElement,teamMembers))
+
+// funzioni
+
+function htmlElement(colElement, team) {
+
+  let items = '';
+
+  for (let i = 0; i < team.length; i++) {
+    let teamElement = team[i]
+    items += createHtmlElement(teamElement);
+  }
+  colElement.innerHTML = items
+
+}
+
 
